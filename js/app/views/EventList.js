@@ -5,6 +5,8 @@ define(function (require) {
     var _                   = require('underscore'),
         Backbone            = require('backbone'),
         tpl                 = require('text!tpl/EventList.html'),
+        empty_tpl           = require('text!tpl/EmptyEventList.html'),
+        empty_template = _.template(empty_tpl),
         template = _.template(tpl);
 
 
@@ -16,7 +18,14 @@ define(function (require) {
 
         render: function (options) {
             
-            this.$el.html(template({event:this.collection.toJSON()}));
+            if(this.collection.length>0){
+                
+                this.$el.html(template({event:this.collection.toJSON()}));
+            }
+            else{
+                
+                this.$el.html(empty_template());
+            }
 
         },
 
