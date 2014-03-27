@@ -8,12 +8,13 @@
     $flickr_user_id = $_GET['flickr_user_id'];
     $gmail = $_GET['gmail'];
 
-    $feeds["home"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=3&format=raw';
-    $feeds["news"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=3&format=raw';  
-    $feeds["about"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=4&format=raw';  
-    $feeds["curriculum"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=5&format=raw';
-    $feeds["activities"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=6&format=raw'; 
-    $feeds["people"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=7&format=raw'; 
+    $feeds["home"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=6&format=raw';
+    $feeds["news"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=6&format=raw';
+    $feeds["about-us"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=2&format=raw';  
+    $feeds["key-information"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=3&format=raw';
+    $feeds["subjects"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=4&format=raw'; 
+    $feeds["further-education"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=5&format=raw'; 
+    $feeds["policies"]  = '/index.php?option=com_ninjarsssyndicator&feed_id=7&format=raw'; 
     
     $feeds['events'] = 'https://www.google.com/calendar/feeds/'.$gmail.'/public/full?orderby=starttime&sortorder=ascending&max-results=10&futureevents=true';
 
